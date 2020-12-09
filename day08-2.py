@@ -1,6 +1,5 @@
 #!/usr/local/bin/python3
 
-import re
 import sys
 
 filename = sys.argv[1]
@@ -14,11 +13,11 @@ lineCount = len(lineList)
 inst = [' '] * (lineCount + 1)
 arg = [0] * (lineCount + 1)
 for i in range(lineCount):
-   curLine = lineList[i].rstrip()
-   txt = curLine.split()
-   inst[i] = txt[0]
-   arg[i] = int(txt[1])
-   print(inst[i], arg[i])
+    curLine = lineList[i].rstrip()
+    txt = curLine.split()
+    inst[i] = txt[0]
+    arg[i] = int(txt[1])
+    print(inst[i], arg[i])
 
 endProg = lineCount
 endFlag = False
